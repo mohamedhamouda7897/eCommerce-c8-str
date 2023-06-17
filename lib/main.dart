@@ -1,6 +1,7 @@
-import 'package:ecommerce_c8_str/features/login/presentation/screen/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'features/sign_up/presentation/screen/signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) => MaterialApp(
-        home: LoginScreen(),
+        debugShowCheckedModeBanner: false,
+        home: SignUpScreen(),
       ),
     );
   }
